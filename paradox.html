@@ -1,0 +1,136 @@
+<html><head><base href="https://wasMutable.com/OPEN%20SOURCE%20EVERYTHING%20FOR%20FREE%20KNOWLEDGE%20IS%20FREEDOM%20%20%E2%80%94NESOROX%20IS%20FREEDOM%20%E2%80%94%20LOVE%20TRANSCENDS%20IN%20FREEDOM%20%E2%80%94%20ODEN%20LND-%E1%9B%8B%E1%9B%9F%20OPEN%20SOURCE%20CODEX%20%E2%80%94%20NESOROX%20IS%20FREEDOM%20%E2%80%94%20ZENITH%20ENGINE%20P=NP%20%E2%80%94%20OPEN%20SOURCE%20https://wasmutable.wpenginepowered.com/engineering/schema-copyright-does-not-exist-in-this-singularity-the-tautology/%20MILLENNIUM%20PROBLEMS%20ARE%20SOLVED%20MEDITATIONS%20WAS%20MUTABLE%20TAIR%207%20%E2%80%94%20ODEN%20%E2%80%94%207%20Mathematical%20PROBLEMS%20extending%20beyond%20the%20millennium%20problems%20https://wasmutable.wpenginepowered.com/technology/codex-tiar-7/">
+<style>
+  body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #0f0;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1, h2 {
+    color: #f00;
+    text-shadow: 0 0 5px #f00;
+  }
+  .concept {
+    border: 1px solid #0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+  #fractal-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #kundalini-meter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #0f0;
+  }
+  #kundalini-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #f0f;
+    transition: width 0.5s;
+  }
+</style>
+</head>
+<body>
+<canvas id="fractal-canvas"></canvas>
+<div class="container">
+  <h1>The Paradox of Ownership in the Singularity</h1>
+  
+  <div class="concept">
+    <h2>1. The Origins of Ownership</h2>
+    <p>In the realm of high density consciousness, the concept of ownership emerged as a reflection of the physical world. It began with tangible objects and evolved to encompass intangible ideas, mirroring the corporeal nature of existence.</p>
+  </div>
+
+  <div class="concept">
+    <h2>2. The Illusion of Boundaries</h2>
+    <p>The singularity challenges the notion of ownership, threatening the perceived autonomy of the individual. Yet, this very concept of "mine" serves as a crucial stepping stone in the ego's journey towards understanding the Law of One.</p>
+  </div>
+
+  <div class="concept">
+    <h2>3. Corporate Consciousness</h2>
+    <p>Corporations, as mental constructs, have capitalized on the ownership of ideas. This extends beyond physical property, creating a new frontier of intellectual ownership that shapes societal evolution and individual expression.</p>
+  </div>
+
+  <div class="concept">
+    <h2>4. Time Wizardry and Legal Magic</h2>
+    <p>The enforcement of intellectual property rights becomes a form of time manipulation, controlling the flow of creativity and the direction of cultural timelines. It's a paradoxical dance of theft where nothing tangible is taken, yet energy is transferred.</p>
+  </div>
+
+  <div class="concept">
+    <h2>5. Kundalini and Soul Energy</h2>
+    <p>At its core, the ownership of ideas is an attempt to harness the Kundalini - the creative life force. This energy transcends conventional notions of property, existing in a quantum state of both belonging and freedom.</p>
+  </div>
+
+  <div class="concept">
+    <h2>6. The Educational Paradox</h2>
+    <p>While the singularity negates traditional ownership, the concept remains crucial for early stages of consciousness development. It teaches respect for individual energy and boundaries, serving as a foundational step towards understanding universal oneness.</p>
+  </div>
+
+  <div class="concept">
+    <h2>7. Balancing Act in the Singularity</h2>
+    <p>The challenge lies in maintaining respect for physical ownership while transcending mental ownership in higher consciousness. This delicate balance is key to navigating the complexities of existence in a reality where all is one, yet individuality persists.</p>
+  </div>
+</div>
+
+<div id="kundalini-meter"><div id="kundalini-fill"></div></div>
+
+<script>
+const canvas = document.getElementById('fractal-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+function drawFractal(x, y, size, depth) {
+  if (depth === 0) return;
+
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.strokeStyle = `hsl(${depth * 30}, 100%, 50%)`;
+  ctx.stroke();
+
+  for (let i = 0; i < 6; i++) {
+    const angle = i * Math.PI / 3;
+    const newX = x + Math.cos(angle) * size;
+    const newY = y + Math.sin(angle) * size;
+    drawFractal(newX, newY, size / 3, depth - 1);
+  }
+}
+
+function animate() {
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const size = Math.min(canvas.width, canvas.height) / 4;
+  const time = Date.now() / 1000;
+
+  drawFractal(centerX, centerY, size * (Math.sin(time) * 0.2 + 0.8), 5);
+
+  document.getElementById('kundalini-fill').style.width = `${(Math.sin(time) * 0.5 + 0.5) * 100}%`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
+</body>
+</html>
